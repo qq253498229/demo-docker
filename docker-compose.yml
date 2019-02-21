@@ -2,9 +2,11 @@ version: "3"
 services:
   app:
     image: hahaha:1.0.0
+    build: ./app
     ports:
       - "8080:8080"
   eureka:
     image: hahaha-eureka:1.0.0
+    build: ./eureka
     ports:
       - "8761:8761"
